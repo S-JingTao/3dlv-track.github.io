@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Language-to-3D Video Modeling Towards\\ 6-DoF Tracking and Shape Reconstructing in Point Cloud Stream.">
+        content="Language-to-4D Modeling Towards\\ 6-DoF Tracking and Shape Reconstruction in 3D Point Cloud Stream.">
   <meta name="keywords" content="tracking, NeRF, pose estimation">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>3DLV-Track: Language-to-3D Video Modeling 
+  <title>L4D-Track: Language-to-4D Modeling 
     
-    Towards 6-DoF Tracking and Shape Reconstructing in Point Cloud Stream</title>
+    Towards 6-DoF Tracking and Shape Reconstruction in 3D Point Cloud Stream</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -49,9 +49,9 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">3DLV-Track: Language-to-3D Video Modeling Towards
-            
-            6-DoF Tracking and Shape Reconstructing in Point Cloud Stream</h1>
+          <h1 class="title is-1 publication-title">L4D-Track: Language-to-4D Modeling 
+    
+    Towards 6-DoF Tracking and Shape Reconstruction in 3D Point Cloud Stream</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
               Jingtao Sun</a><sup>1,2</sup>,</span>
@@ -60,7 +60,7 @@
             <span class="author-block">
               Mingtao Feng</a><sup>2</sup>,
             </span>
-            <span class="author-block">
+<!--             <span class="author-block">
               Dongxing Mao</a><sup>1</sup>,
             </span>
             <span class="author-block">
@@ -68,7 +68,7 @@
             </span>
             <span class="author-block">
               Jiawei Liu</a><sup>1</sup>,
-            </span>
+            </span> -->
             <span class="author-block">
               Yulan Guo</a><sup>3</sup>
             </span>
@@ -110,12 +110,12 @@
               </span>
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/S-JingTao/3DLV-Track"
+                <a href="https://github.com/S-JingTao/L4D-Track"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
                   </span>
-                  <span>Code (Comning soon)</span>
+                  <span>Code (Coming soon!)</span>
                   </a>
               </span>
             </div>
@@ -134,17 +134,17 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
-          3D visual language multi-modal modeling plays an important role in actual human-computer interaction. However, 
-          the inaccessibility of large-scale 3D-language pairs restricts their applicability in real-world scenarios. 
-          In this paper, we aim to handle a real-time multi-task for 6-DoF pose tracking of unknown objects, leveraging 
-          3D-language pre-training scheme from a series of 3D point cloud video streams, while simultaneously performing 
-          3D shape reconstruction in current observation. To this end, we present a generic Language-3D Video modeling paradigm 
-          termed 3DLV-Track, that tackles zero-shot 6-DoF Tracking and shape reconstructing by learning pairwise implicit 3D representation 
-          and multi-modal features alignment. Our method constitutes two core parts. 1) Pairwise Implicit 3D Space Representation, 
-          that establishes spatial-temporal to language coherence descriptions across continuous 3D point cloud video. 
-          2) 3D Video-Language Association and Contrastive Alignment, enables multi-modality semantic connections between 3D point cloud video and language. 
-          Our method trained exclusively on public NOCS-REAL275 dataset, achieves promising results on both two publicly benchmarks. 
-          This not only shows powerful generalization performance, but also proves its remarkable capability in zero-shot inference.
+          3D visual language multi-modal modeling plays an important role in actual human-computer interaction. 
+          However, the inaccessibility of large-scale 3D-language pairs restricts their applicability in real-world scenarios. 
+          In this paper, we aim to handle a real-time multi-task for 6-DoF pose tracking of unknown objects, leveraging 3D-language 
+          pre-training scheme from a series of 3D point cloud video streams, while simultaneously performing 3D shape reconstruction 
+          in current observation. To this end, we present a generic \underline{L}anguage-to-\underline{4D} modeling paradigm termed L4D-Track, 
+          that tackles zero-shot 6-DoF \underline{Track}ing and shape reconstructing by learning pairwise implicit 3D representation and 
+          multi-modal features alignment. Our method constitutes two core parts. 1) Pairwise Implicit 3D Space Representation, that establishes 
+          spatial-temporal to language coherence descriptions across continuous 3D point cloud video. 2) 3D Video-Language Association and Contrastive 
+          Alignment, enables multi-modality semantic connections between 3D point cloud video and language. Our method trained exclusively on public 
+          NOCS-REAL275 dataset, achieves promising results on both two publicly benchmarks. This not only shows powerful generalization performance, 
+          but also proves its remarkable capability in zero-shot inference.
           </p>
         </div>
       </div>
@@ -156,12 +156,10 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Pipline</h2>
         <div class="publication-video">
-          <img src="./static/images/interpolate.jpg"></img>
-          Overview of our 3DLV-Track. Left: Our method employs a pose hypothesis network and a nerual pose-aligned shape field to 
-          simultaneously track 6-DoF pose and reconstruct the corresponding 3D shape in the current observation. Right: 
-          Given a 3D point cloud stream and the language-3D captions, our method achieves real-time, causal 6-DoF tracking and 3D shape 
-          reconstructing of unseen objects. The alignment of our multi-modal 3D pairwise features showcases robust generalization capabilities, 
-          extending even to zero-shot task.
+          <img src="./figure/show.png"></img>
+          Given a 3D point cloud stream and the language-3D captions, our method achieves real-time, causal 6-DoF pose tracking while
+          reconstructing the 3D shape in the current observation. We demonstrate that: (a) our method not only enables zero-shot inference for
+          unseen objects with known categories, (b) but also perfectly showcases the zero-shot capabilities for unseen objects with unknown classes.
         </div>
       </div>
     </div>
@@ -172,7 +170,7 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Overview</h2>
         <div class="publication-video">
-          <img src="./static/images/interpolate.jpg"></img>
+          <img src="./figure/overview.png"></img>
           Illustration of the pipline of proposed methodology. Given input point cloud stream along with the corresponding segmented
           mask, we first encode them with both 2D/3D backbone and cross-coupled fusion module separately to obtain inter-frame embeddings
           ft−1, ft. These paired embeddings are then used to model the energy-based hypothesis about changes in pose and learn a neural pose-
@@ -183,6 +181,19 @@
       </div>
     </div>
     <!--/ overview. -->
+
+    <!-- visualization. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Visualization Results</h2>
+        <div class="publication-video">
+          <img src="./figure/visualization.png"></img>
+          <img src="./figure/extra-show-real.png"></img>
+          
+        </div>
+      </div>
+    </div>
+    <!--/ visualization. -->
   </div>
 </section>
 
@@ -190,8 +201,8 @@
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
     <pre><code>@article{park2021nerfies,
-  author    = {Jingtao Sun, Yaonan Wang, Mingtao Feng, Dongxing Mao, Weixian Lei, Jiawei Liu, Yulan Guo, Ajmal Mian and Mike Zheng Shou},
-  title     = {3DLV-Track: Language-to-3D Video Modeling Towards 6-DoF Tracking and Shape Reconstructing in Point Cloud Stream},
+  author    = {Jingtao Sun, Yaonan Wang, Mingtao Feng, Yulan Guo, Ajmal Mian and Mike Zheng Shou},
+  title     = {L4D-Track: Language-to-4D Modeling Towards 6-DoF Tracking and Shape Reconstruction in 3D Point Cloud Stream},
   journal   = {},
   year      = {2023},
 }</code></pre>
