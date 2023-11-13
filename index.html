@@ -153,10 +153,11 @@
     <!--/ pipline. -->
     <!-- overview. -->
     <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
+      <div class="column is-full-width">
         <h2 class="title is-3">Overview</h2>
-        <div class="publication-video">
-          <img src="./figure/overview.png"></img>
+        <div class="content has-text-centered">
+          <img src="./figure/overview.png" alt="Image description" style="width: 100%; height: auto;">
+          
           Illustration of the pipline of proposed methodology. Given input point cloud stream along with the corresponding segmented
           mask, we first encode them with both 2D/3D backbone and cross-coupled fusion module separately to obtain inter-frame embeddings
           ft−1, ft. These paired embeddings are then used to model the energy-based hypothesis about changes in pose and learn a neural pose-
@@ -168,17 +169,12 @@
     </div>
     <!--/ overview. -->
     <!-- visualization. -->
-    <div class="columns is-vcentered interpolation-panel">
-      <div class="column is-3 has-text-centered">
-        <h3 class="title is-4">Visualization Results</h3>
-        <div class="content has-text-justified">
-          
-          <img src="./figure/visualization.png"
-              class="interpolation-image"/>
-          
-          <img src="./figure/extra-show-real.png"
-               class="interpolation-image"/>>
-          
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Visualization Results</h2>
+        <div class="content has-text-centered">
+          <img src="./figure/visualization.png" alt="Image description" style="width: 100%; height: auto;">
+          <img src="./figure/extra-show-real.png" alt="Image description" style="width: 100%; height: auto;">
         </div>
       </div>
     </div>
